@@ -6,7 +6,7 @@ class Configuration:
         # Initialize the data related variables used in the notebook
         # For reading the ndvi, pan and annotated images generated in the Preprocessing step.
         # In most cases, they will take the same value as in the config/Preprocessing.py
-        self.base_dir = ''
+        self.base_dir = '../India_result'
         self.image_type = '.png'
         self.ndvi_fn = 'ndvi'
         self.pan_fn = 'pan'
@@ -41,11 +41,11 @@ class Configuration:
         self.input_weight_channel = [3]
 
         # CNN model related variables used in the notebook
-        self.BATCH_SIZE = 8
-        self.NB_EPOCHS = 200
+        self.BATCH_SIZE = 1
+        self.NB_EPOCHS = 100
 
         # number of validation images to use
-        self.VALID_IMG_COUNT = 200
+        self.VALID_IMG_COUNT = 192
         # maximum number of steps_per_epoch in training
         self.MAX_TRAIN_STEPS = 1000
         self.model_path = './saved_models/UNet/'
