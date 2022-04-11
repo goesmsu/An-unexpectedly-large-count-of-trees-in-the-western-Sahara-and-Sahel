@@ -6,7 +6,7 @@ class Configuration:
         # Initialize the data related variables used in the notebook
         # For reading the ndvi, pan and annotated images generated in the Preprocessing step.
         # In most cases, they will take the same value as in the config/Preprocessing.py
-        self.base_dir = '../India_result'
+        self.base_dir = '../results'
         self.image_type = '.png'
         self.ndvi_fn = 'ndvi'
         self.pan_fn = 'pan'
