@@ -7,14 +7,14 @@ class Configuration:
     def __init__(self):
         
         # Input related variables
-        self.input_image_dir = '../India_test_area'
+        self.input_image_dir = '../data'
         self.input_image_type = '.tif'
         self.ndvi_fn_st = 'wv03_20190407054002_1040010048338400_19apr07054002-m1bs-503158889080_01_p006_utm43n_b357_pan_ndvi'
         self.pan_fn_st = 'wv03_20190407054002_1040010048338400_19apr07054002-m1bs-503158889080_01_p006_utm43n_b357_pan_sub'
-        self.trained_model_path = './saved_models/UNet/trees_20220328-2022_AdaDelta_weightmap_tversky_012_256.h5'
+        self.trained_model_path = './saved_models/UNet/'
 
         # Output related variables
-        self.output_dir = '../India_result'
+        self.output_dir = '../results'
         self.output_image_type = '.tif'
         self.output_prefix = self.ndvi_fn_st + '_predict'
         self.output_shapefile_type = '.shp'
