@@ -42,7 +42,7 @@ class Configuration:
 
         # CNN model related variables used in the notebook
         self.BATCH_SIZE = 1                        # Do Not Change
-        self.NB_EPOCHS = 100
+        self.NB_EPOCHS = 20
 
         # number of validation images to use
         self.VALID_IMG_COUNT = 192

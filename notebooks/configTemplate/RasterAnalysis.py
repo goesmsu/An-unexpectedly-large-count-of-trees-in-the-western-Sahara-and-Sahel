@@ -9,14 +9,14 @@ class Configuration:
         # Input related variables
         self.input_image_dir = '../data'
         self.input_image_type = '.tif'
-        self.ndvi_fn_st = 'wv03_20190407054002_1040010048338400_19apr07054002-m1bs-503158889080_01_p006_utm43n_b357_pan_ndvi'
-        self.pan_fn_st = 'wv03_20190407054002_1040010048338400_19apr07054002-m1bs-503158889080_01_p006_utm43n_b357_pan_sub'
-        self.trained_model_path = './saved_models/UNet/'
+        self.ndvi_fn_st = 'ndvi_'
+        self.pan_fn_st = 'pan_'
+        self.trained_model_path = './saved_models/UNet'
 
         # Output related variables
         self.output_dir = '../results'
         self.output_image_type = '.tif'
-        self.output_prefix = self.ndvi_fn_st + '_predict'
+        self.output_suffix = '_predict'
         self.output_shapefile_type = '.shp'
         self.overwrite_analysed_files = True
         self.output_dtype='uint8'
